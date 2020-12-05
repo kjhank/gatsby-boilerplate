@@ -20,7 +20,13 @@ Gatsby starter with stylelint and eslint configs and using styled-components. Ma
 	git clone git@github.com:kjhank/gatsby-styled-components.git
 	```
 
-2. ### Start your development environment: 💻
+2. ### Install everything
+
+	```sh
+	yarn install
+	```
+
+3. ### Start your development environment: 💻
 
 	```sh
 	cd gatsby-styled-components
@@ -29,6 +35,7 @@ Gatsby starter with stylelint and eslint configs and using styled-components. Ma
 
 	Now you can navigate to `http://localhost:8000` in your browser and view the basic layout.
 
-3. ### Start coding! 👩‍💻
+4. ### Start coding! 👩‍💻
 
 	Open any of the files in your favorite editor and see any changes you make as soon as you save the file.
+

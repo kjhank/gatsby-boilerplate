@@ -64,8 +64,10 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "clean": "gatsby clean",
     "dev": "gatsby develop",
     "lint": "eslint . && stylelint \"app/**/*.js\"",
+    "nuke": "gatsby clean && rm -fr node_modules && yarn install",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
     "start": "yarn run develop"

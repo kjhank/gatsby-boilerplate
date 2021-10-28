@@ -88,7 +88,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.15.5":
+"@babel/core@npm:^7.15.5, @babel/core@npm:^7.15.8":
   version: 7.15.8
   resolution: "@babel/core@npm:7.15.8"
   dependencies:
@@ -111,7 +111,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/eslint-parser@npm:^7.15.4":
+"@babel/eslint-parser@npm:^7.15.4, @babel/eslint-parser@npm:^7.15.8":
   version: 7.15.8
   resolution: "@babel/eslint-parser@npm:7.15.8"
   dependencies:
@@ -122,6 +122,18 @@ __metadata:
     "@babel/core": ">=7.11.0"
     eslint: ">=7.5.0"
   checksum: 1c88334837d9555330fdeeff7b75404d931a5f9452aa57940602c78807d5324246919029c4d47059bf6927b44187938e7eb1d8570f422458bd3d26b313c9f9b3
+  languageName: node
+  linkType: hard
+
+"@babel/eslint-plugin@npm:^7.14.5":
+  version: 7.14.5
+  resolution: "@babel/eslint-plugin@npm:7.14.5"
+  dependencies:
+    eslint-rule-composer: ^0.3.0
+  peerDependencies:
+    "@babel/eslint-parser": ">=7.11.0"
+    eslint: ">=7.5.0"
+  checksum: 7aa5868ee9f2396da650067eb2c918011d830e0aca7af87ed361d6de8c182c2f6535fa1acc8711f76b3d52fc91e50b2784d5756d628d3af9cc93593fd115fafa
   languageName: node
   linkType: hard
 
@@ -1578,7 +1590,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-runtime@npm:^7.15.0":
+"@babel/plugin-transform-runtime@npm:^7.15.0, @babel/plugin-transform-runtime@npm:^7.15.8":
   version: 7.15.8
   resolution: "@babel/plugin-transform-runtime@npm:7.15.8"
   dependencies:
@@ -7206,6 +7218,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-rule-composer@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "eslint-rule-composer@npm:0.3.0"
+  checksum: c2f57cded8d1c8f82483e0ce28861214347e24fd79fd4144667974cd334d718f4ba05080aaef2399e3bbe36f7d6632865110227e6b176ed6daa2d676df9281b1
+  languageName: node
+  linkType: hard
+
 "eslint-scope@npm:5.1.1, eslint-scope@npm:^5.1.1":
   version: 5.1.1
   resolution: "eslint-scope@npm:5.1.1"
@@ -8564,6 +8583,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "gatsby-styled-components@workspace:."
   dependencies:
+    "@babel/core": ^7.15.8
+    "@babel/eslint-parser": ^7.15.8
+    "@babel/eslint-plugin": ^7.14.5
+    "@babel/plugin-transform-runtime": ^7.15.8
+    "@babel/runtime": ^7.15.4
     babel-eslint: ^10.1.0
     babel-plugin-styled-components: ^1.13.3
     eslint: ^8.1.0

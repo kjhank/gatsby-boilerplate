@@ -12,17 +12,6 @@ module.exports = {
     'gatsby-plugin-sharp',
     {
       options: {
-        rule: {
-          omitKeys: [
-            'width',
-            'height',
-          ],
-        },
-      },
-      resolve: 'gatsby-plugin-react-svg',
-    },
-    {
-      options: {
         alias: {
           '@assets': 'src/assets',
           '@components': 'src/components',

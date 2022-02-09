@@ -1,6 +1,35 @@
+const path = require('path');
+
+const gatsbyRequiredRules = path.join(
+  process.cwd(),
+  'node_modules',
+  'gatsby',
+  'dist',
+  'utils',
+  'eslint-rules'
+);
+
 module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
+    {
+      exclude: [
+        'node_modules',
+        '.cache',
+        'public',
+      ],
+      options: {
+        extensions: [
+          'js',
+          'jsx',
+          'ts',
+          'tsx',
+        ],
+        rulePaths: [gatsbyRequiredRules],
+        stages: ['develop'],
+      },
+      resolve: 'gatsby-plugin-eslint',
+    },
     {
       options: {
         name: 'images',
@@ -28,7 +57,7 @@ module.exports = {
       options: {
         background_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/gatsby-icon.png',
         name: 'Untitled Gatsby project',
         short_name: 'foo',
         start_url: '/',
@@ -37,9 +66,6 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
     },
     'gatsby-plugin-styled-components',
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
   ],
   siteMetadata: {
     author: '@kjhank',

@@ -178,36 +178,6 @@ const GlobalStyle = createGlobalStyle`
     vertical-align: sub;
   }
 
-  @keyframes slideFade {
-    to {
-      opacity: 0;
-      transform: translate(-50%, 100%);
-    }
-  }
-
-  @keyframes fade {
-    to {
-      opacity: 0;
-    }
-  }
-
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-
-    to {
-      transform: rotate(359deg);
-    }
-  }
-
-  @keyframes glow {
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-
   @media (prefers-reduced-motion: reduce) {
     * {
       transition-duration: 0.01ms !important;

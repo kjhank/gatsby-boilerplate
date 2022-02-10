@@ -13,6 +13,10 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     {
+      options: { files: ['**/*.{js,jsx,ts,tsx}'] },
+      resolve: '@danbruegge/gatsby-plugin-stylelint',
+    },
+    {
       exclude: [
         'node_modules',
         '.cache',

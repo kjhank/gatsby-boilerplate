@@ -1,30 +1,39 @@
 {
-  "extends": ["airbnb", "airbnb/hooks", "react-app"],
-  "plugins": ["react-hooks"],
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "react-app"
+  ],
+  "plugins": [
+    "react-hooks"
+  ],
   "rules": {
     "array-bracket-newline": [
       "error",
       {
-        "multiline": true,
-        "minItems": 3
+        "minItems": 3,
+        "multiline": true
       }
     ],
     "array-element-newline": [
       "error",
       {
-        "multiline": true,
-        "minItems": 3
+        "minItems": 3,
+        "multiline": true
       }
     ],
-    "arrow-parens": [2, "as-needed"],
+    "arrow-parens": [
+      2,
+      "as-needed"
+    ],
     "comma-dangle": [
       "error",
       {
         "arrays": "always-multiline",
-        "objects": "always-multiline",
-        "imports": "always-multiline",
         "exports": "always-multiline",
-        "functions": "never"
+        "functions": "never",
+        "imports": "always-multiline",
+        "objects": "always-multiline"
       }
     ],
     "import/no-extraneous-dependencies": "off",
@@ -52,9 +61,9 @@
     "object-curly-newline": [
       "error",
       {
+        "consistent": true,
         "minProperties": 3,
-        "multiline": true,
-        "consistent": true
+        "multiline": true
       }
     ],
     "object-property-newline": [
@@ -71,38 +80,25 @@
       "error",
       {
         "blankLine": "always",
-        "prev": "*",
         "next": [
-          "return",
+          "block",
           "class",
           "export",
+          "for",
+          "if",
           "multiline-const",
+          "return",
           "switch",
           "throw",
           "try",
-          "while",
-          "for",
-          "block",
-          "if"
-        ]
+          "while"
+        ],
+        "prev": "*"
       },
       {
         "blankLine": "always",
+        "next": "*",
         "prev": [
-          "const",
-          "let",
-          "var"
-        ],
-        "next": "*"
-      },
-      {
-        "blankLine": "any",
-        "prev": [
-          "const",
-          "let",
-          "var"
-        ],
-        "next": [
           "const",
           "let",
           "var"
@@ -110,30 +106,48 @@
       },
       {
         "blankLine": "any",
+        "next": [
+          "const",
+          "let",
+          "var"
+        ],
         "prev": [
+          "const",
+          "let",
+          "var"
+        ]
+      },
+      {
+        "blankLine": "any",
+        "next": [
           "export"
         ],
-        "next": [
+        "prev": [
           "export"
         ]
       }
     ],
-    "react/jsx-curly-newline": "off",
-    "react/jsx-props-no-spreading": "off",
-    "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
-    "react/jsx-filename-extension": "off",
     "react-hooks/exhaustive-deps": "warn",
     "react-hooks/rules-of-hooks": "error",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function"
+      }
+    ],
+    "react/jsx-curly-newline": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-fragments": [
+      "error",
+      "syntax"
+    ],
     "react/jsx-max-props-per-line": [
       "error",
       {
         "maximum": 2
       }
     ],
-    "react/jsx-fragments": [
-      "error",
-      "syntax"
-    ],
+    "react/jsx-props-no-spreading": "off",
     "react/jsx-sort-props": [
       "error",
       {
@@ -147,10 +161,10 @@
         "ignoreDeclarationSort": true,
         "ignoreMemberSort": false,
         "memberSyntaxSortOrder": [
-          "single",
-          "multiple",
           "all",
-          "none"
+          "multiple",
+          "none",
+          "single"
         ]
       }
     ],

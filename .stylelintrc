@@ -1,6 +1,7 @@
 {
+  "customSyntax": "postcss-scss",
   "extends": [
-    "stylelint-config-recommended",
+    "stylelint-config-standard-scss",
     "stylelint-config-styled-components"
   ],
   "processors": [

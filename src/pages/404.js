@@ -25,7 +25,7 @@ const Text = styled.p`
 `;
 
 const StyledLink = styled(Link)`
-  color: #b00b1e;
+  color: #b00b13;
   text-decoration: underline;
 `;
 

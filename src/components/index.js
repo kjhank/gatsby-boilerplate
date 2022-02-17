@@ -1,7 +1,2 @@
-import Container from './Container/Container';
-import FixedHeader from './FixedHeader/FixedHeader';
-
-export {
-  Container,
-  FixedHeader,
-};
+export { Container } from './Container/Container';
+export { default as Layout } from './Layout/Layout';

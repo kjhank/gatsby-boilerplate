@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   html {
     overflow: auto;
     box-sizing: border-box;
@@ -122,7 +122,7 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
-    font-family: 'Tahoma', sans-serif;
+    font-family: sans-serif;
     line-height: 1.2;
   }
 
@@ -187,5 +187,3 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 `;
-
-export default GlobalStyle;

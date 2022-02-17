@@ -15,12 +15,10 @@ const theme = {
   },
 };
 
-const Theme = ({ children }) => (
+export const Theme = ({ children }) => (
   <ThemeProvider theme={theme}>{children}</ThemeProvider>
 );
 
 Theme.propTypes = {
   children: PropTypes.node.isRequired,
 };
-
-export default Theme;

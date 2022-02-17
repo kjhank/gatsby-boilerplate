@@ -1,4 +1,3 @@
-import GlobalStyle from './GlobalStyle';
 import {
   mediaQueries,
   mfQueries,
@@ -8,7 +7,6 @@ import {
 } from './helpers';
 
 export {
-  GlobalStyle,
   isBrowser,
   mediaQueries,
   mfQueries,

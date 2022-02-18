@@ -1,14 +1,14 @@
-# Gatsby starter with Styled Components and linters
+# Gatsby boilerplate with Styled Components and linters
 
-Gatsby starter with stylelint and eslint configs and using styled-components. Mainly for my personal projects.
+Gatsby + styled-components boilerplate with stylelint and eslint configs. Mainly for my personal projects.
 
 ## Includes:
 
-* `GlobalStyle` component with a CSS reset
-* `gatsby-plugin-react-svg` with a basic config to remove fixed dimensions
+* `GlobalStyle` component with a customized CSS reset,
+* a global `Layout` component wrapper,
 * `polished` for SASS-like functions in Styled Components,
-* `gatsby-plugin-alias-imports` for import aliases like `@components`, `@pages` etc.
-* polyfill for smooth JS scroll, until it's supported in Safari
+* `gatsby-plugin-alias-imports` for import aliases like `@components`, `@pages` etc. (also in jsconfig.json),
+* polyfill for smooth JS scroll,
 * some basic breakpoints for RWD
 
 
@@ -17,7 +17,7 @@ Gatsby starter with stylelint and eslint configs and using styled-components. Ma
 1. ### Clone the repo 👯:
 
 	```sh
-	git clone git@github.com:kjhank/gatsby-styled-components.git
+	git clone git@github.com:kjhank/gatsby-boilerplate.git
 	```
 
 2. ### Install everything
@@ -25,11 +25,15 @@ Gatsby starter with stylelint and eslint configs and using styled-components. Ma
 	```sh
 	yarn install
 	```
+    or
+    ```sh
+    npm install
+    ```
 
 3. ### Start your development environment: 💻
 
 	```sh
-	cd gatsby-styled-components
+	cd gatsby-boilerplate
 	yarn dev
 	```
 

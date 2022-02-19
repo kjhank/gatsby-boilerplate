@@ -71,6 +71,6 @@ module.exports = {
   siteMetadata: {
     author: '@kjhank',
     description: 'Gatsby starter using Styled Components',
-    title: 'Gatsby Starter with Styled Components',
+    title: 'Gatsby boilerplate',
   },
 };

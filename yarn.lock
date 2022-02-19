@@ -9480,6 +9480,57 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-boilerplate@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "gatsby-boilerplate@workspace:."
+  dependencies:
+    "@babel/core": ^7.15.8
+    "@babel/plugin-transform-runtime": ^7.15.8
+    "@babel/runtime": ^7.15.4
+    "@stylelint/postcss-css-in-js": ^0.37.2
+    babel-plugin-styled-components: ^1.13.3
+    eslint: ^8.8.0
+    eslint-config-airbnb: ^19.0.4
+    eslint-config-react-app: ^7.0.0
+    eslint-plugin-flowtype: ^8.0.3
+    eslint-plugin-import: ^2.25.4
+    eslint-plugin-jsx-a11y: ^6.5.1
+    eslint-plugin-react: ^7.28.0
+    eslint-plugin-react-hooks: ^4.3.0
+    eslint-webpack-plugin: ^3.1.1
+    gatsby: ^4.7.2
+    gatsby-plugin-alias-imports: ^1.0.5
+    gatsby-plugin-eslint: ^4.0.2
+    gatsby-plugin-image: ^2.7.0
+    gatsby-plugin-manifest: ^4.7.0
+    gatsby-plugin-offline: ^5.7.0
+    gatsby-plugin-react-helmet: ^5.7.0
+    gatsby-plugin-sharp: ^4.7.0
+    gatsby-plugin-styled-components: ^5.7.0
+    gatsby-source-filesystem: ^4.7.0
+    gatsby-transformer-sharp: ^4.7.0
+    husky: ^7.0.0
+    lint-staged: ^12.3.4
+    polished: ^4.1.4
+    postcss-scss: ^4.0.3
+    postcss-styled: ^0.34.0
+    postcss-syntax: ^0.36.2
+    prop-types: ^15.8.1
+    react: ^17.0.2
+    react-dom: ^17.0.2
+    react-helmet: ^6.1.0
+    sanitize-html: ^2.7.0
+    smoothscroll-polyfill: ^0.4.4
+    styled-components: ^5.3.3
+    stylelint: ^14.4.0
+    stylelint-config-recommended: ^7.0.0
+    stylelint-config-standard-scss: ^3.0.0
+    stylelint-config-styled-components: ^0.1.1
+    stylelint-order: ^5.0.0
+    stylelint-processor-styled-components: ^1.10.0
+  languageName: unknown
+  linkType: soft
+
 "gatsby-cli@npm:^4.7.0":
   version: 4.7.0
   resolution: "gatsby-cli@npm:4.7.0"
@@ -9842,57 +9893,6 @@ __metadata:
   checksum: bc6c72ec501fd945bccdce0200ae1677c502dfca18a96fe2fa27ec70f8b1876755ab7dca09ff4e0d1a5959068785070bfcebcff9f6460c447d6ebc7204bfef89
   languageName: node
   linkType: hard
-
-"gatsby-styled-components@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "gatsby-styled-components@workspace:."
-  dependencies:
-    "@babel/core": ^7.15.8
-    "@babel/plugin-transform-runtime": ^7.15.8
-    "@babel/runtime": ^7.15.4
-    "@stylelint/postcss-css-in-js": ^0.37.2
-    babel-plugin-styled-components: ^1.13.3
-    eslint: ^8.8.0
-    eslint-config-airbnb: ^19.0.4
-    eslint-config-react-app: ^7.0.0
-    eslint-plugin-flowtype: ^8.0.3
-    eslint-plugin-import: ^2.25.4
-    eslint-plugin-jsx-a11y: ^6.5.1
-    eslint-plugin-react: ^7.28.0
-    eslint-plugin-react-hooks: ^4.3.0
-    eslint-webpack-plugin: ^3.1.1
-    gatsby: ^4.7.2
-    gatsby-plugin-alias-imports: ^1.0.5
-    gatsby-plugin-eslint: ^4.0.2
-    gatsby-plugin-image: ^2.7.0
-    gatsby-plugin-manifest: ^4.7.0
-    gatsby-plugin-offline: ^5.7.0
-    gatsby-plugin-react-helmet: ^5.7.0
-    gatsby-plugin-sharp: ^4.7.0
-    gatsby-plugin-styled-components: ^5.7.0
-    gatsby-source-filesystem: ^4.7.0
-    gatsby-transformer-sharp: ^4.7.0
-    husky: ^7.0.0
-    lint-staged: ^12.3.4
-    polished: ^4.1.4
-    postcss-scss: ^4.0.3
-    postcss-styled: ^0.34.0
-    postcss-syntax: ^0.36.2
-    prop-types: ^15.8.1
-    react: ^17.0.2
-    react-dom: ^17.0.2
-    react-helmet: ^6.1.0
-    sanitize-html: ^2.7.0
-    smoothscroll-polyfill: ^0.4.4
-    styled-components: ^5.3.3
-    stylelint: ^14.4.0
-    stylelint-config-recommended: ^7.0.0
-    stylelint-config-standard-scss: ^3.0.0
-    stylelint-config-styled-components: ^0.1.1
-    stylelint-order: ^5.0.0
-    stylelint-processor-styled-components: ^1.10.0
-  languageName: unknown
-  linkType: soft
 
 "gatsby-telemetry@npm:^3.7.0":
   version: 3.7.0

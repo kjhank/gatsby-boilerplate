@@ -1,8 +1,7 @@
 {
   "extends": [
     "airbnb",
-    "airbnb/hooks",
-    "react-app"
+    "airbnb/hooks"
   ],
   "plugins": [
     "react-hooks"

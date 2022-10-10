@@ -6,7 +6,7 @@ export const Wrapper = styled.main`
 `;
 
 export const Text = styled.p`
-  font-size: 16px;
+  font-size: 18px;
 `;
 
 export const StyledLink = styled(Link)`

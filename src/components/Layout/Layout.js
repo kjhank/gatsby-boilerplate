@@ -7,9 +7,7 @@ import { GlobalStyle, Theme } from '@theme';
 import { Container } from '@components';
 import { htmlAttributes } from './static';
 
-const Layout = ({
-  children, path,
-}) => {
+const Layout = ({ children }) => {
   useEffect(() => {
     smoothscroll.polyfill();
   }, []);
@@ -24,7 +22,7 @@ const Layout = ({
       {children}
       <footer>
         <Container>
-          I&apos;m a footer
+          I am a footer
         </Container>
       </footer>
     </Theme>
@@ -35,5 +33,4 @@ export default Layout;
 
 Layout.propTypes = {
   children: PropTypes.oneOfType([PropTypes.node, PropTypes.arrayOf(PropTypes.node)]).isRequired,
-  path: PropTypes.string.isRequired,
 };

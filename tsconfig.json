@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
-    "module": "commonjs",
+    "module": "esnext",
     "target": "esnext",
     "jsx": "preserve",
     "lib": [
@@ -29,7 +29,7 @@
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
-    "./gatsby-config.ts",
+    // "./gatsby-config.ts",
     "./gatsby-*.ts",
     "./gatsby-*.tsx"
   ]

@@ -1,4 +1,4 @@
-const path = require('path');
+import path from 'path';
 
 const gatsbyRequiredRules = path.join(
   process.cwd(),
@@ -9,7 +9,7 @@ const gatsbyRequiredRules = path.join(
   'eslint-rules'
 );
 
-module.exports = {
+export default {
   plugins: [
     'gatsby-plugin-tsconfig-paths',
     'gatsby-plugin-typescript',
@@ -20,11 +20,7 @@ module.exports = {
         'public',
       ],
       options: {
-        extensions: [
-          // 'js',
-          // 'jsx',
-          'ts', 'tsx',
-        ],
+        extensions: ['ts', 'tsx'],
         rulePaths: [gatsbyRequiredRules],
         stages: ['develop'],
       },
@@ -47,7 +43,7 @@ module.exports = {
         name: 'Untitled Gatsby project',
         short_name: 'foo',
         start_url: '/',
-        theme_color: '#663399', // TODO: set these up
+        theme_color: '#663399', // TODO: set these up 👆
       },
       resolve: 'gatsby-plugin-manifest',
     },

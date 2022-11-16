@@ -11,7 +11,8 @@ const gatsbyRequiredRules = path.join(
 
 module.exports = {
   plugins: [
-    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-tsconfig-paths',
+    'gatsby-plugin-typescript',
     {
       exclude: [
         'node_modules',
@@ -20,10 +21,9 @@ module.exports = {
       ],
       options: {
         extensions: [
-          'js',
-          'jsx',
-          'ts',
-          'tsx',
+          // 'js',
+          // 'jsx',
+          'ts', 'tsx',
         ],
         rulePaths: [gatsbyRequiredRules],
         stages: ['develop'],
@@ -41,21 +41,6 @@ module.exports = {
     'gatsby-plugin-sharp',
     {
       options: {
-        alias: {
-          '@assets': 'src/assets',
-          '@components': 'src/components',
-          '@containers': 'src/containers',
-          '@pages': 'src/pages',
-          '@src': 'src',
-          '@theme': 'src/theme',
-          '@utils': 'src/utils',
-        },
-        extensions: ['js'],
-      },
-      resolve: 'gatsby-plugin-alias-imports',
-    },
-    {
-      options: {
         background_color: '#663399',
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png',
@@ -70,7 +55,9 @@ module.exports = {
   ],
   siteMetadata: {
     author: '@kjhank',
-    description: 'Gatsby starter using Styled Components',
+    description: 'Gatsby TS starter with Styled Components + ESLint',
     title: 'Gatsby boilerplate',
   },
 };
+
+export { };

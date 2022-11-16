@@ -5193,7 +5193,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.0.25":
+"@types/react@npm:*, @types/react@npm:^18.0.25":
   version: 18.0.25
   resolution: "@types/react@npm:18.0.25"
   dependencies:
@@ -10677,62 +10677,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-boilerplate@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "gatsby-boilerplate@workspace:."
-  dependencies:
-    "@stylelint/postcss-css-in-js": ^0.38.0
-    "@types/node": ^18.11.9
-    "@types/react": ^18.0.25
-    "@types/react-dom": ^18.0.9
-    "@types/sanitize-html": ^2.6.2
-    "@types/styled-components": ^5.1.26
-    "@typescript-eslint/eslint-plugin": ^5.43.0
-    "@typescript-eslint/parser": ^5.43.0
-    eslint: ^8.27.0
-    eslint-config-airbnb: ^19.0.4
-    eslint-config-airbnb-typescript: ^17.0.0
-    eslint-config-react-app: ^7.0.1
-    eslint-config-standard-with-typescript: ^23.0.0
-    eslint-plugin-flowtype: ^8.0.3
-    eslint-plugin-import: ^2.26.0
-    eslint-plugin-jsx-a11y: ^6.6.1
-    eslint-plugin-n: ^15.5.1
-    eslint-plugin-promise: ^6.1.1
-    eslint-plugin-react: ^7.31.10
-    eslint-plugin-react-hooks: ^4.6.0
-    eslint-webpack-plugin: ^3.2.0
-    gatsby: ^5.0.1
-    gatsby-plugin-eslint: ^4.0.3
-    gatsby-plugin-image: ^3.0.0
-    gatsby-plugin-manifest: ^5.0.0
-    gatsby-plugin-offline: ^6.0.0
-    gatsby-plugin-sharp: ^5.0.0
-    gatsby-plugin-styled-components: ^6.0.0
-    gatsby-plugin-tsconfig-paths: ^1.0.5
-    gatsby-plugin-typescript: ^5.0.0
-    gatsby-source-filesystem: ^5.0.0
-    gatsby-transformer-sharp: ^5.0.0
-    husky: ^8.0.2
-    lint-staged: ^13.0.3
-    polished: ^4.2.2
-    postcss-scss: ^4.0.5
-    postcss-styled: ^0.34.0
-    postcss-syntax: ^0.36.2
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    sanitize-html: ^2.7.3
-    styled-components: ^5.3.6
-    stylelint: ^14.15.0
-    stylelint-config-recommended: ^9.0.0
-    stylelint-config-standard-scss: ^6.1.0
-    stylelint-config-styled-components: ^0.1.1
-    stylelint-order: ^5.0.0
-    stylelint-processor-styled-components: ^1.10.0
-    typescript: ^4.9.3
-  languageName: unknown
-  linkType: soft
-
 "gatsby-cli@npm:^5.0.0":
   version: 5.0.0
   resolution: "gatsby-cli@npm:5.0.0"
@@ -11160,6 +11104,62 @@ __metadata:
   checksum: e98f9277c43b8a3f0b7b95256dda97b1650663768cc6ce7120b4eb7e1965ee934bb61306cddb665ea0c4a8f7dad7f9a761a90e3bc8c4723940e1a4295a814f64
   languageName: node
   linkType: hard
+
+"gatsby-ts-boilerplate@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "gatsby-ts-boilerplate@workspace:."
+  dependencies:
+    "@stylelint/postcss-css-in-js": ^0.38.0
+    "@types/node": ^18.11.9
+    "@types/react": ^18.0.25
+    "@types/react-dom": ^18.0.9
+    "@types/sanitize-html": ^2.6.2
+    "@types/styled-components": ^5.1.26
+    "@typescript-eslint/eslint-plugin": ^5.43.0
+    "@typescript-eslint/parser": ^5.43.0
+    eslint: ^8.27.0
+    eslint-config-airbnb: ^19.0.4
+    eslint-config-airbnb-typescript: ^17.0.0
+    eslint-config-react-app: ^7.0.1
+    eslint-config-standard-with-typescript: ^23.0.0
+    eslint-plugin-flowtype: ^8.0.3
+    eslint-plugin-import: ^2.26.0
+    eslint-plugin-jsx-a11y: ^6.6.1
+    eslint-plugin-n: ^15.5.1
+    eslint-plugin-promise: ^6.1.1
+    eslint-plugin-react: ^7.31.10
+    eslint-plugin-react-hooks: ^4.6.0
+    eslint-webpack-plugin: ^3.2.0
+    gatsby: ^5.0.1
+    gatsby-plugin-eslint: ^4.0.3
+    gatsby-plugin-image: ^3.0.0
+    gatsby-plugin-manifest: ^5.0.0
+    gatsby-plugin-offline: ^6.0.0
+    gatsby-plugin-sharp: ^5.0.0
+    gatsby-plugin-styled-components: ^6.0.0
+    gatsby-plugin-tsconfig-paths: ^1.0.5
+    gatsby-plugin-typescript: ^5.0.0
+    gatsby-source-filesystem: ^5.0.0
+    gatsby-transformer-sharp: ^5.0.0
+    husky: ^8.0.2
+    lint-staged: ^13.0.3
+    polished: ^4.2.2
+    postcss-scss: ^4.0.5
+    postcss-styled: ^0.34.0
+    postcss-syntax: ^0.36.2
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    sanitize-html: ^2.7.3
+    styled-components: ^5.3.6
+    stylelint: ^14.15.0
+    stylelint-config-recommended: ^9.0.0
+    stylelint-config-standard-scss: ^6.1.0
+    stylelint-config-styled-components: ^0.1.1
+    stylelint-order: ^5.0.0
+    stylelint-processor-styled-components: ^1.10.0
+    typescript: ^4.9.3
+  languageName: unknown
+  linkType: soft
 
 "gatsby-worker@npm:^2.0.0":
   version: 2.0.0

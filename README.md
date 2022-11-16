@@ -17,13 +17,13 @@ Gatsby + TS + styled-components boilerplate with stylelint and eslint configs. M
 
   _note:_ Gatsby v5, which is used here, requires Node to be at least at v18
 
-1. ### Clone the repo 👯:
+### Clone the repo 👯:
 
 	```sh
 	git clone git@github.com:kjhank/gatsby-boilerplate.git
 	```
 
-2. ### Install everything
+### Install everything
 
 	```sh
 	yarn install
@@ -33,7 +33,7 @@ Gatsby + TS + styled-components boilerplate with stylelint and eslint configs. M
     npm install
     ```
 
-3. ### Start your development environment: 💻
+### Start your development environment: 💻
 
 	```sh
 	cd gatsby-boilerplate
@@ -46,21 +46,23 @@ Gatsby + TS + styled-components boilerplate with stylelint and eslint configs. M
 
 	Now you can navigate to `http://localhost:8000` in your browser and view the basic layout.
 
-4. ### Start coding! 👩‍💻
+### Start coding! 👩‍💻
 
 	Open any of the files in your favorite editor and see any changes you make as soon as you save the file.
 
 
 ## Troubleshooting:
-* if you're getting an error like
+* In case you're getting the following error:
 
-  ```
-    Module build failed (from ./node_modules/@pmmmwh/react-refresh-webpack-plugin/loader/index.js):
-    Error: You must provide the URL of lib/mappings.wasm by calling SourceMapConsumer.initialize({ 'lib/mappings.wasm': ... }) before using SourceMapConsumer
-  ```
+```
+  Module build failed (from ./node_modules/@pmmmwh/react-refresh-webpack-plugin/loader/index.js):
+  Error: You must provide the URL of lib/mappings.wasm by calling SourceMapConsumer.initialize({ 'lib/mappings.wasm': ... }) before using SourceMapConsumer
+```
 
- disable native `fetch` from node by running `export NODE_OPTIONS=--no-experimental-fetch` before the `dev` commands.
+disable native `fetch` from node by running `export NODE_OPTIONS=--no-experimental-fetch` before the `dev` commands.
 ## TODO:
 
-* get rid of pre-commit hooks and lint in CI
-* improve theme
+* get rid of pre-commit hooks and set up linting in CI,
+* refactor files & directories structure,
+* improve theme,
+* improve RWD - research first.

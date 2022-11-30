@@ -1,74 +1,86 @@
 {
-  "name": "gatsby-styled-components",
+  "name": "gatsby-ts-boilerplate",
   "private": true,
-  "description": "basic Gatsby starter with Styled Components & linters",
-  "version": "0.1.0",
+  "description": "Gatsby TS starter with Styled Components + ESLint",
+  "version": "1.2.0",
   "author": "Krzysztof Hankiewicz @kjhank <kjhank@gmail.com>",
   "dependencies": {
-    "babel-plugin-styled-components": "^1.12.0",
-    "gatsby": "^2.28.0",
-    "gatsby-image": "^2.7.0",
-    "gatsby-plugin-alias-imports": "^1.0.5",
-    "gatsby-plugin-manifest": "^2.8.0",
-    "gatsby-plugin-offline": "^3.6.0",
-    "gatsby-plugin-react-helmet": "^3.6.0",
-    "gatsby-plugin-react-svg": "^3.0.0",
-    "gatsby-plugin-sharp": "^2.10.0",
-    "gatsby-plugin-styled-components": "^3.6.0",
-    "gatsby-source-filesystem": "^2.7.0",
-    "gatsby-transformer-sharp": "^2.8.0",
-    "polished": "^4.0.5",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0",
-    "smoothscroll-polyfill": "^0.4.4",
-    "styled-components": "^5.2.1"
+    "gatsby": "^5.0.1",
+    "gatsby-plugin-image": "^3.0.0",
+    "gatsby-plugin-manifest": "^5.0.0",
+    "gatsby-plugin-offline": "^6.0.0",
+    "gatsby-plugin-sharp": "^5.0.0",
+    "gatsby-plugin-styled-components": "^6.0.0",
+    "gatsby-plugin-typescript": "^5.0.0",
+    "gatsby-source-filesystem": "^5.0.0",
+    "gatsby-transformer-sharp": "^5.0.0",
+    "polished": "^4.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sanitize-html": "^2.7.3",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.15.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-react-app": "^6.0.0",
-    "eslint-loader": "^4.0.2",
-    "eslint-plugin-flowtype": "^5.2.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^4.3.4",
-    "lint-staged": "^10.5.3",
-    "stylelint": "^13.8.0",
-    "stylelint-config-standard": "^20.0.0",
+    "@stylelint/postcss-css-in-js": "^0.38.0",
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "@types/sanitize-html": "^2.6.2",
+    "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "eslint": "^8.27.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-webpack-plugin": "^3.2.0",
+    "gatsby-plugin-eslint": "^4.0.3",
+    "gatsby-plugin-tsconfig-paths": "^1.0.5",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
+    "postcss-scss": "^4.0.5",
+    "postcss-styled": "^0.34.0",
+    "postcss-syntax": "^0.36.2",
+    "stylelint": "^14.15.0",
+    "stylelint-config-recommended": "^9.0.0",
+    "stylelint-config-standard-scss": "^6.1.0",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-order": "^4.1.0",
-    "stylelint-processor-styled-components": "^1.10.0"
+    "stylelint-order": "^5.0.0",
+    "stylelint-processor-styled-components": "^1.10.0",
+    "typescript": "^4.9.3"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "yarn eslint",
-      "yarn stylelint \"app/**/*.js\""
-    ],
-    "*.jsx": [
-      "yarn eslint"
-    ]
+  "engines": {
+    "node": ">=18.0.0"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "typescript",
+    "styled-components",
+    "eslint"
   ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "clean": "gatsby clean",
     "dev": "gatsby develop",
-    "lint": "eslint . && stylelint \"app/**/*.js\"",
+    "lint": "eslint . && stylelint './src/**/*.ts'",
+    "lint:css": "stylelint './src/**/*.styled.ts'",
+    "lint:ts": "eslint .",
+    "lint:types": "tsc --noEmit",
+    "nuke": "gatsby clean && rm -fr node_modules && yarn install",
+    "pre-commit": "lint-staged",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "start": "yarn run develop"
+    "start": "yarn run develop",
+    "postinstall": "husky install"
   },
   "repository": {
     "type": "git",
@@ -76,5 +88,6 @@
   },
   "bugs": {
     "url": "https://github.com/kjhank/gatsby-styled-components/issues"
-  }
+  },
+  "packageManager": "yarn@3.1.0"
 }

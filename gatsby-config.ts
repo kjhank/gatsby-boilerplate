@@ -1,4 +1,4 @@
-const path = require('path');
+import path from 'path';
 
 const gatsbyRequiredRules = path.join(
   process.cwd(),
@@ -9,9 +9,10 @@ const gatsbyRequiredRules = path.join(
   'eslint-rules'
 );
 
-module.exports = {
+export default {
   plugins: [
-    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-tsconfig-paths',
+    'gatsby-plugin-typescript',
     {
       exclude: [
         'node_modules',
@@ -19,12 +20,7 @@ module.exports = {
         'public',
       ],
       options: {
-        extensions: [
-          'js',
-          'jsx',
-          'ts',
-          'tsx',
-        ],
+        extensions: ['ts', 'tsx'],
         rulePaths: [gatsbyRequiredRules],
         stages: ['develop'],
       },
@@ -41,28 +37,13 @@ module.exports = {
     'gatsby-plugin-sharp',
     {
       options: {
-        alias: {
-          '@assets': 'src/assets',
-          '@components': 'src/components',
-          '@containers': 'src/containers',
-          '@pages': 'src/pages',
-          '@src': 'src',
-          '@theme': 'src/theme',
-          '@utils': 'src/utils',
-        },
-        extensions: ['js'],
-      },
-      resolve: 'gatsby-plugin-alias-imports',
-    },
-    {
-      options: {
         background_color: '#663399',
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png',
         name: 'Untitled Gatsby project',
         short_name: 'foo',
         start_url: '/',
-        theme_color: '#663399', // TODO: set these up
+        theme_color: '#663399', // TODO: set these up 👆
       },
       resolve: 'gatsby-plugin-manifest',
     },
@@ -70,7 +51,9 @@ module.exports = {
   ],
   siteMetadata: {
     author: '@kjhank',
-    description: 'Gatsby starter using Styled Components',
+    description: 'Gatsby TS starter with Styled Components + ESLint',
     title: 'Gatsby boilerplate',
   },
 };
+
+export { };

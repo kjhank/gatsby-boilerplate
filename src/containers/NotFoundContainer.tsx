@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Container } from '@components';
+import { Container } from '@/components';
 
 import {
   StyledLink, Text, Wrapper,
-} from '@components/styled';
+} from '@/components/styled';
 
 export const NotFoundContainer = () => (
   <Wrapper>

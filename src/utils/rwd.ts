@@ -10,6 +10,9 @@ export const breakpoints = {
   xxs: 360,
 };
 
+type Breakpoint = keyof typeof breakpoints;
+type MediaQueries = keyof typeof mediaQueries;
+
 const mediaQueries = {
   landscape: '(orientation: landscape)',
   nonTouch: '(pointer: fine)',
@@ -24,11 +27,11 @@ const mfQueries = {
 };
 
 Object.keys(breakpoints).forEach(size => {
-  mediaQueries[size] = `(max-width: ${breakpoints[size]}px)`;
+  mediaQueries[size as MediaQueries] = `(max-width: ${breakpoints[size as Breakpoint]}px)`;
 });
 
 Object.keys(breakpoints).forEach(size => {
-  mfQueries[size] = `(min-width: ${breakpoints[size]}px)`;
+  mfQueries[size as MediaQueries] = `(min-width: ${breakpoints[size as Breakpoint]}px)`;
 });
 
 export {

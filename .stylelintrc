@@ -1,23 +1,53 @@
 {
-  "customSyntax": "postcss-scss",
   "extends": [
-    "stylelint-config-standard-scss",
-    "stylelint-config-styled-components"
+    "stylelint-config-standard"
   ],
-  "processors": [
-    "stylelint-processor-styled-components"
+  "overrides": [
+    {
+      "files": [
+        "**/*.{ts,tsx}"
+      ],
+      "customSyntax": "postcss-styled-syntax"
+    }
   ],
   "plugins": [
     "stylelint-order"
   ],
   "rules": {
-    "value-keyword-case": ["lower", { "ignoreKeywords": ["dummyValue", "optimizeSpeed"] }],
+    "function-no-unknown": [
+      true,
+      {
+        "ignoreFunctions": [
+          "/\\${/"
+        ]
+      }
+    ],
+    "value-keyword-case": [
+      "lower",
+      {
+        "camelCaseSvgKeywords": true,
+        "ignoreKeywords": [
+          "dummyValue",
+          "optimizeSpeed",
+          "currentColor"
+        ]
+      }
+    ],
     "declaration-empty-line-before": "never",
-    "string-quotes": "single",
     "font-family-name-quotes": "always-unless-keyword",
-    "at-rule-no-unknown": [true, {
-      "ignoreAtRules": ["function", "if", "mixin", "include", "each"]
-    }],
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "function",
+          "if",
+          "mixin",
+          "include",
+          "each",
+          "import"
+        ]
+      }
+    ],
     "order/properties-order": [
       {
         "properties": [

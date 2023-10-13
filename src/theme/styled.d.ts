@@ -6,13 +6,13 @@ declare module 'styled-components' {
       brand: string
     }
     fonts: {
-      heading: string;
-      text: string;
+      heading: string
+      text: string
     }
     transitions: {
-      fast?: string;
-      default: string;
-      slow?: string;
+      fast?: string
+      default: string
+      slow?: string
     }
   }
 }

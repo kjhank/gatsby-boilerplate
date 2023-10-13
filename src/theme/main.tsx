@@ -1,6 +1,6 @@
 import React from 'react';
-import { DefaultTheme, ThemeProvider } from 'styled-components';
-import { ThemeProps } from './theme.types';
+import { type DefaultTheme, ThemeProvider } from 'styled-components';
+import { type ThemeProps } from './theme.types';
 
 const theme: DefaultTheme = {
   colors: {

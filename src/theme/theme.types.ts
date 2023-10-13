@@ -1,5 +1,5 @@
-import React from 'react';
+import type React from 'react';
 
-export type ThemeProps = {
-  children: React.ReactNode;
-};
+export interface ThemeProps {
+  children: React.ReactNode
+}

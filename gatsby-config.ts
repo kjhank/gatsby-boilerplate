@@ -1,4 +1,4 @@
-// import path from 'path';
+import path from 'path';
 
 // const gatsbyRequiredRules = path.join(
 //   process.cwd(),
@@ -13,23 +13,23 @@ export default {
   plugins: [
     'gatsby-plugin-tsconfig-paths',
     'gatsby-plugin-typescript',
-    // {
-    //   exclude: [
-    //     'node_modules',
-    //     '.cache',
-    //     'public',
-    //   ],
-    //   options: {
-    //     extensions: ['ts', 'tsx'],
-    //     // rulePaths: [gatsbyRequiredRules],
-    //     stages: ['develop'],
-    //   },
-    //   resolve: 'gatsby-plugin-eslint',
-    // },
+    {
+      exclude: [
+        'node_modules',
+        '.cache',
+        'public',
+      ],
+      options: {
+        extensions: ['ts', 'tsx'],
+        // rulePaths: [gatsbyRequiredRules],
+        stages: ['develop'],
+      },
+      resolve: 'gatsby-plugin-eslint',
+    },
     {
       options: {
         name: 'images',
-        path: `${__dirname}/src/images`,
+        path: path.join(__dirname, '/src/images'),
       },
       resolve: 'gatsby-source-filesystem',
     },

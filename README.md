@@ -1,3 +1,5 @@
+** Repo has been archived, as Gatsby is pretty much dead **
+
 # Gatsby TypeScript starter with Styled Components & linters
 
 Gatsby + TS + styled-components boilerplate with stylelint and eslint configs. Mainly for my personal projects.
